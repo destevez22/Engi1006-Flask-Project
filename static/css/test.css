@@ -1,6 +1,23 @@
-body {
-      margin: 0;
-      padding: 0;
-      font-family: "Helvetica Heue", Helvetica, Arial, sans-serif;
-      color: #444;
+table, th, td{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #85C1E9;
+    color: white;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #2980B9;
+   color: white;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
 }

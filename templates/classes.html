@@ -3,99 +3,113 @@
     <head>
         <!--specifies title of the page !-->
         <title>First Year Classes</title>
-    <head>
+        <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}"> !-->
+    </head>
     
-   
+    <body style="background-color:#A3E4D7;">
     <style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
+    table, th, td{
+        margin-left: auto;
+        margin-right: auto;
     }
     
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
     }
     
-    tr:nth-child(even) {
-      background-color: #dddddd;
+    table#t01 tr:nth-child(even) {
+        background-color: #85C1E9;
+        color: white;
+    }
+    table#t01 tr:nth-child(odd) {
+       background-color: #2980B9;
+       color: white;
+    }
+    table#t01 th {
+        background-color: black;
+        color: white;
     }
     </style>
-   
-    <body>
+        <h3 style= "text-align:center">Semester 1 Classes</h3>
+        
+        <table id="t01">
+          <tr>
+            <th>Class</th>
+            <th>Professor</th>
+            <th>Course Number</th>
+          </tr>
+            <tr>
+            <td>Principles of Economics</td>
+            <td>Sunil Gulati</td>
+            <td>ECON 1105 UN</td>
+          </tr>
+          <tr>
+            <td>General Chemistry I</td>
+            <td>Gerard Parkin</td>
+            <td>CHEM 1403 UN</td>
+          </tr>
+          <tr>
+            <td>Calculus II</td>
+            <td>Yi Sun</td>
+            <td>Math 1102 UN</td>
+          </tr>
+          <tr>
+            <td>Physics I: Mechanics / Relativity</td>
+            <td>Jeremy Dodd</td>
+            <td>PHSY 1601 UN</td>
+          </tr>
+          <tr>
+            <td>The Art of Engineering</td>
+            <td>David Vallancourt</td>
+            <td>ENGI 1102 E</td>
+          </tr>
+        </table>
+        
+        <h3 style= "text-align:center">Semester 2 Classes</h3>
+        
+        <table id="t01">
+        <tr>
+            <th>Class</th>
+            <th>Professor</th>
+            <th>Course Number</th>
+          </tr>
+          <tr>
+            <td>University Writing</td>
+            <td>Brianna Williams</td>
+            <td>ENGL 1010 CC</td>
+          </tr>
+          <tr>
+            <td>Mechanics I</td>
+            <td>James Hone</td>
+            <td>ENME 3105 E</td>
+          </tr>
+          <tr>
+            <td>Multivariable Calculus</td>
+            <td>Drew Youngren</td>
+            <td>APMA 2001 E</td>
+          </tr>
+          <tr>
+            <td>Physics II: Thermo, Electricity, Magneticism</td>
+            <td>Jeremy Dodd</td>
+            <td>PHYS 1602 UN</td>
+          </tr>
+          <tr>
+            <td>Intro to Python</td>
+            <td>Timothy Paine</td>
+            <td>ENGI 1006 E</td>
+          </tr>
+        </table>
     
-    <h2>Semester 1 Classes</h2>
+    <br>
+    <p>So far my two favorite classes have been Mechanics and Python. As an inspiring mechanical engineering major
+    it is certainly a good thing that I like mechanics, even if sometimes I irresponsibly take way too much time to 
+    solve a frustrating problem. My relationship with python began a bit more begrudginly; I took the class as a 
+    requirement but also out of interest, somewhat intimidated by my lack of coding knowledge. Throughout the semester
+    there were frustrating moments, and far too often a lack of knowledge discouraged me, but I certainly have grown
+    to like python, both as a language and a class.</p>
     
-    <table>
-      <tr>
-        <th>Class</th>
-        <th>Professor</th>
-        <th>Course Number</th>
-      </tr>
-      <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
-      </tr>
-      <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
-      </tr>
-      <tr>
-        <td>Ernst Handel</td>
-        <td>Roland Mendel</td>
-        <td>Austria</td>
-      </tr>
-      <tr>
-        <td>Island Trading</td>
-        <td>Helen Bennett</td>
-        <td>UK</td>
-      </tr>
-      <tr>
-        <td>Laughing Bacchus Winecellars</td>
-        <td>Yoshi Tannamuri</td>
-        <td>Canada</td>
-      </tr>
-    </table>
-    
-    <h2>Semester 2 Classes</h2>
-    
-    <table>
-    <tr>
-        <th>Class</th>
-        <th>Professor</th>
-        <th>Course Number</th>
-      </tr>
-      <tr>
-        <td>University Writing</td>
-        <td>Brianna Williams</td>
-        <td>ENGL 1010 CC</td>
-      </tr>
-      <tr>
-        <td>Mechanics I</td>
-        <td>James Hone</td>
-        <td>ENME 3105 E</td>
-      </tr>
-      <tr>
-        <td>Multivariable Calculus</td>
-        <td>Drew Youngren</td>
-        <td>APMA 2001 E</td>
-      </tr>
-      <tr>
-        <td>Physics II: Thermo, Electricity, Magneticism</td>
-        <td>Jeremy Dodd</td>
-        <td>PHYS 1602 UN</td>
-      </tr>
-      <tr>
-        <td>Intro to Python</td>
-        <td>Timothy Paine</td>
-        <td>ENGI 1006 E</td>
-      </tr>
-    </table>
-
     <br><br>
     
     <a href="/">Return to main page.</a></li>

@@ -28,7 +28,6 @@ def classes():
 @app.route("/comics")
 def whatif():
     return render_template("comics.html")
-        
 
 #start the server
 if __name__ == "__main__":
