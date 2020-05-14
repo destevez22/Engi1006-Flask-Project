@@ -16,9 +16,9 @@ app = Flask(__name__)
 def homepage():
     return render_template("homepage.html")
 
-@app.route("/1006")
-def comingsoon():
-    return render_template("1006.html")
+@app.route("/assignments")
+def assignments():
+    return render_template("assignments.html")
 
 @app.route("/classes")
 def classes():
